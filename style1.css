@@ -4,10 +4,12 @@
   font-size: 1.6rem;
   /* background-color: #ff8787;
    */
-  background-color: #fff9db;
+  
   height: 100vh;
 }
-
+body{
+  background-color: #fff9db;
+} 
 .navigation {
   display: flex;
   gap: 7.8rem;
