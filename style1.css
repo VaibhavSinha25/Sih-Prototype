@@ -1,0 +1,201 @@
+/* Header section */
+
+.header {
+  font-size: 1.6rem;
+  /* background-color: #ff8787;
+   */
+  background-color: #fff9db;
+  height: 100vh;
+}
+
+.navigation {
+  display: flex;
+  gap: 7.8rem;
+  /* margin: 2.8rem; */
+  list-style: none;
+  padding: 5rem 0 5rem 2.8rem;
+  font-size: 3rem;
+  margin-bottom: 9rem;
+}
+.nav {
+  text-decoration: none;
+  font-weight: 600;
+}
+.nav:link,
+.nav:visited {
+  /* color: #d9480f; */
+  color: #555;
+}
+.nav:hover,
+.nav:active {
+  color: orange;
+}
+
+.container {
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 3rem;
+}
+.heading {
+  align-self: center;
+  line-height: 1.2;
+}
+
+.wallet {
+  vertical-align: middle;
+  height: 7.4rem;
+}
+.logo {
+  height: 45rem;
+  width: 45rem;
+  border-radius: 25%;
+}
+
+.btn-explore {
+  display: inline-block;
+  font-size: 2.4rem;
+  font-weight: 500;
+  border-style: none;
+  padding: 2rem;
+  color: #222;
+  background-color: #f59f00;
+  border-radius: 5%;
+  cursor: pointer;
+  translate: 24rem;
+  margin-top: 9rem;
+}
+.btn-explore:active,
+.btn-explore:link,
+.btn-explore:visited {
+  text-decoration: none;
+}
+.btn-explore:hover {
+  color: #e67700;
+}
+
+.home-nav {
+  justify-content: flex-end;
+  margin-right: 9rem;
+}
+
+/* MAIN SECTION */
+
+.main {
+  height: 100%;
+  /* background-color: #d0ebff; */
+  background-image: linear-gradient(to left bottom, #d0ebff, #74c0fc);
+}
+.main-heading {
+  text-align: center;
+  color: #343a40;
+}
+
+.amount-form {
+  display: flex;
+  font-size: 3.2rem;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 10rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#amount,
+#budget {
+  font-size: 3.2rem;
+  background-color: #d0ebff;
+  border: none;
+}
+.budget-input {
+  margin-left: 10rem;
+}
+.savings {
+  display: flex;
+  font-size: 3.2rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+  gap: 3rem;
+}
+.savings-amount {
+  font-size: 4.8rem;
+}
+
+.balance {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.8rem;
+  flex-direction: column;
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+.expenditure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.2rem;
+}
+
+.income,
+.money-plus,
+.expense,
+.money-minus {
+  background-color: #d0ebff;
+  padding: 3rem;
+}
+
+.income,
+.money-plus,
+.expense,
+.money-minus {
+  border: 1px solid #e67700;
+}
+
+.History {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 3.2rem;
+  font-weight: 600;
+  padding-bottom: 3rem;
+  /* border-bottom: 1px solid #d9480f; */
+}
+.history {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list {
+  list-style: none;
+  font-size: 2.8rem;
+  margin-top: 3rem;
+  background-color: #fff9db;
+  padding: 10rem;
+  width: fit-content;
+  text-align: center;
+  position: relative;
+  border-right: 5px solid red;
+}
+.money {
+  margin-left: 4rem;
+  /* border-left: 1px solid red; */
+  padding-left: 3rem;
+}
+.btn-del {
+  cursor: pointer;
+  border: 0;
+  color: red;
+  font-size: 20px;
+  padding: 0.2rem 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.list li:hover .btn-del {
+  opacity: 1;
+}
